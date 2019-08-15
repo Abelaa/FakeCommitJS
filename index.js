@@ -10,8 +10,8 @@ var time = process.argv[3] || 5; // seconds
 var repo = process.argv[2]
 var repoPath = path.join(repo, '')
 
-setTimeout(() => {
+setInterval(() => {
 	git(repoPath)
 	.add('.', () => console.log('added all files'))
-	.commit('updated this feature')
+	.commit('updated this feature', () => console.log('finished committing.'))
 }, time*1000)
