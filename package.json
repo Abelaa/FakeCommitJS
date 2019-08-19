@@ -1,14 +1,15 @@
 {
-  "name": "github-auto-commit",
+  "name": "fakecommitjs",
   "version": "1.0.0",
   "description": "Helps you populate the commit chart on github. You don't even have to know what is committed.",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "fakecommit": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abel Tefera",
   "license": "MIT",
-  "dependencies": {
-    "simple-git": "^1.124.0"
-  }
+  "dependencies": {}
 }
