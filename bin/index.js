@@ -2,15 +2,18 @@
 var commit = require('../lib')
 var fs = require('fs')
 
-if (process.argv.length < 3) {
-	console.log('provide location of the repo')
-	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval=5]')
-	return
-} else if (process.argv.length < 4) {
-	console.log('provide the file be modified')
-	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval = 5 seconds]')
-	return
-}
+print(__dirname)
+
+
+// if (process.argv.length < 3) {
+// 	console.log('provide location of the repo')
+// 	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval=5]')
+// 	return
+// } else if (process.argv.length < 4) {
+// 	console.log('provide the file be modified')
+// 	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval = 5 seconds]')
+// 	return
+// }
 
 var repoPath = process.argv[2] || '../example'
 var targetFile = process.argv[3] || '../example/app.js'
