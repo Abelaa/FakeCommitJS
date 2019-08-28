@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 var { startAutoCommit } = require('../lib')
 var fs = require('fs')
 
