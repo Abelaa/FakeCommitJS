@@ -1,2 +1,2 @@
 
-require('./bin')
+module.exports = require('./lib')

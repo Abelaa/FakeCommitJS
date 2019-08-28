@@ -1,10 +1,10 @@
 
-var commit = require('../lib')
+var { startAutoCommit } = require('../lib')
 var fs = require('fs')
 
 if (process.argv.length < 3) {
 	console.log('provide location of the repo')
-	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval=5]')
+	console.log('Usage: fakecommit <repo-path> <target-file> [time-interval = 5]')
 	return
 } else if (process.argv.length < 4) {
 	console.log('provide the file be modified')
@@ -20,9 +20,7 @@ var repoExists = fs.existsSync(repoPath)
 var targetFileExists = fs.existsSync(targetFile)
 
 if (repoExists && targetFileExists) {
-	setInterval(function () {
-		commit(repoPath, targetFile)
-	}, interval*1000)
+	startAutoCommit(repoPath, targetFile, interval)
 } else if (!repoExists) {
 	console.log(`repo path '${repoPath}' doesn't exist`)
 } else if (!targetFileExists) {
