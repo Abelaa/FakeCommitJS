@@ -1,6 +1,6 @@
 {
   "name": "fakecommitjs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Helps you populate the commit chart on github. You don't even have to know what is committed.",
   "main": "./lib/index.js",
   "bin": {
