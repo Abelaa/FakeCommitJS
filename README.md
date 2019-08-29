@@ -1,3 +1,6 @@
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![logo](images/logo_png.png)
+
 # FakeCommitJS
 
 This is a simple node module that allows you to create fake commits
@@ -57,8 +60,8 @@ addCommitMessages([
 ])
 
 startAutoCommit(
-	'../example',
-	'../example/app.js',
+	'../example-repo',
+	'../example-repo/app.js',
 	3
 )
 ```
