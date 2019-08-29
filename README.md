@@ -1,4 +1,4 @@
-![Logo](logo.png)
+![Logo](https://github.com/Abelaa/FakeCommitJS/blob/master/logo.PNG)
 
 # FakeCommitJS
 
