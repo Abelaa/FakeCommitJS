@@ -1,5 +1,4 @@
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-![logo](https://raw.githubusercontent.com/abelaa/FakeCommitJS/master/images/logo_image.png)
+![Logo](logo.png)
 
 # FakeCommitJS
 
