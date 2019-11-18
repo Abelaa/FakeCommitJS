@@ -49,7 +49,7 @@ The module exports two main functions:
 ```javascript
 // index.js file
 
-var { startAutoCommit, addCommitMessages } = require('fakecommitjs')
+const { startAutoCommit, addCommitMessages } = require('fakecommitjs')
 
 addCommitMessages([
 	'what\'s going on',
